@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Islom — zamonaviy va yuqori samarali raqamli mahsulotlar yaratuvchi frontend dasturchi.">
+  <meta name="theme-color" content="#111310">
+  <meta property="og:title" content="Islom — Frontend Developer">
+  <meta property="og:description" content="G‘oyalardan tez, qulay va esda qolarli raqamli mahsulotlargacha.">
+  <meta property="og:type" content="website">
+  <title>Islom — Frontend Developer</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Asosiy qismga o‘tish</a>
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <header class="site-header" data-header>
+    <div class="container header-inner">
+      <a class="logo" href="#home" aria-label="Islom — bosh sahifa">
+        <span class="logo-mark">i</span><span>islom<span class="accent">.</span>dev</span>
+      </a>
+      <nav class="desktop-nav" aria-label="Asosiy navigatsiya">
+        <a href="#about">Men haqimda</a>
+        <a href="#projects">Loyihalar</a>
+        <a href="#experience">Tajriba</a>
+      </nav>
+      <a class="button button-small header-cta" href="#contact">Bog‘lanish <span aria-hidden="true">↗</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Menyuni ochish">
+        <span></span><span></span>
+      </button>
+    </div>
+    <nav class="mobile-nav" id="mobile-menu" aria-label="Mobil navigatsiya" hidden>
+      <a href="#about">Men haqimda <span>01</span></a>
+      <a href="#projects">Loyihalar <span>02</span></a>
+      <a href="#experience">Tajriba <span>03</span></a>
+      <a href="#contact">Bog‘lanish <span>04</span></a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="availability reveal">
+            <span class="status-dot"></span>
+            Yangi loyihalar uchun ochiqman
+          </div>
+          <h1 class="reveal reveal-delay-1">G‘oyalarni<br><em>kuchli mahsulotga</em><br>aylantiraman.</h1>
+          <p class="hero-description reveal reveal-delay-2">Men Islomman — frontend dasturchi. Murakkab g‘oyalarni tez, qulay va biznesga natija beradigan raqamli tajribalarga aylantiraman.</p>
+          <div class="hero-actions reveal reveal-delay-3">
+            <a class="button button-primary" href="#projects">Ishlarimni ko‘ring <span class="button-icon" aria-hidden="true">↓</span></a>
+            <a class="text-link" href="#contact">Suhbatlashamiz <span aria-hidden="true">↗</span></a>
+          </div>
+          <dl class="hero-stats reveal reveal-delay-3">
+            <div><dt>4+</dt><dd>yillik tajriba</dd></div>
+            <div><dt>30+</dt><dd>yakunlangan loyiha</dd></div>
+            <div><dt>12</dt><dd>mamnun mijoz</dd></div>
+          </dl>
+        </div>
+
+        <div class="hero-visual reveal reveal-delay-2" data-tilt>
+          <div class="portrait-wrap">
+            <span class="portrait-grid" aria-hidden="true"></span>
+            <img src="assets/profile.svg" alt="Islomning illustratsiya qilingan portreti" width="620" height="700">
+            <div class="portrait-caption"><span>Frontend developer</span><span>Toshkent, UZ</span></div>
+          </div>
+          <div class="floating-card code-card" aria-hidden="true">
+            <div class="code-dots"><i></i><i></i><i></i></div>
+            <code><span>const</span> focus = <b>"impact"</b>;<br><span>while</span> (alive) {<br>&nbsp;&nbsp;create();<br>}</code>
+          </div>
+          <div class="floating-card quality-card">
+            <span class="quality-icon" aria-hidden="true">✦</span>
+            <div><strong>Quality first</strong><small>Har bir piksel muhim</small></div>
+          </div>
+        </div>
+      </div>
+      <a class="scroll-hint" href="#about" aria-label="Keyingi bo‘limga o‘tish"><span>Kashf eting</span><i aria-hidden="true"></i></a>
+    </section>
+
+    <div class="marquee" aria-label="Asosiy yo‘nalishlar">
+      <div class="marquee-track">
+        <span>FRONTEND DEVELOPMENT</span><i>✦</i><span>REACT &amp; TYPESCRIPT</span><i>✦</i><span>UI ENGINEERING</span><i>✦</i><span>WEB PERFORMANCE</span><i>✦</i>
+        <span aria-hidden="true">FRONTEND DEVELOPMENT</span><i aria-hidden="true">✦</i><span aria-hidden="true">REACT &amp; TYPESCRIPT</span><i aria-hidden="true">✦</i><span aria-hidden="true">UI ENGINEERING</span><i aria-hidden="true">✦</i><span aria-hidden="true">WEB PERFORMANCE</span><i aria-hidden="true">✦</i>
+      </div>
+    </div>
+
+    <section class="about section-light" id="about">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div class="eyebrow"><span>01</span> Men haqimda</div>
+          <h2>Chiroyli interfeys.<br><em>Kuchli muhandislik.</em></h2>
+        </div>
+        <div class="about-intro">
+          <p class="about-lead reveal">Kod yozish — ishning faqat bir qismi. Asosiy maqsadim — foydalanuvchi va biznes uchun <strong>haqiqiy qiymat yaratish.</strong></p>
+          <div class="about-copy reveal reveal-delay-1">
+            <p>Men mahsulotning dastlabki g‘oyasidan tortib, yakuniy relizigacha bo‘lgan jarayonda ishlashni yaxshi ko‘raman. Dizayn tizimlari, toza arxitektura va kichik detallarga e’tibor orqali murakkab narsalarni oddiy qilaman.</p>
+            <p>Jamoa bilan ochiq muloqot, o‘lchanadigan natija va uzoq muddat ishlaydigan yechimlar — mening ish tamoyillarim.</p>
+          </div>
+        </div>
+
+        <div class="capabilities-grid">
+          <article class="capability-card reveal">
+            <div class="capability-top"><span class="card-number">01</span><span class="line-icon" aria-hidden="true">⌘</span></div>
+            <h3>Frontend development</h3>
+            <p>Tez, xavfsiz va kengayadigan interfeyslar. Zamonaviy ekotizim, toza kod va kuchli arxitektura.</p>
+            <ul class="tag-list" aria-label="Frontend texnologiyalari"><li>React</li><li>Next.js</li><li>TypeScript</li></ul>
+          </article>
+          <article class="capability-card capability-accent reveal reveal-delay-1">
+            <div class="capability-top"><span class="card-number">02</span><span class="line-icon" aria-hidden="true">✣</span></div>
+            <h3>UI engineering</h3>
+            <p>Dizaynni piksel aniqligida, barcha qurilmalarda va barcha foydalanuvchilar uchun jonli mahsulotga aylantirish.</p>
+            <ul class="tag-list" aria-label="UI texnologiyalari"><li>Design systems</li><li>Accessibility</li><li>Motion</li></ul>
+          </article>
+          <article class="capability-card reveal reveal-delay-2">
+            <div class="capability-top"><span class="card-number">03</span><span class="line-icon" aria-hidden="true">↗</span></div>
+            <h3>Performance</h3>
+            <p>Har bir millisekund muhim. Yuklanish tezligi, SEO va foydalanuvchi tajribasini doimiy optimallashtirish.</p>
+            <ul class="tag-list" aria-label="Optimallashtirish yo‘nalishlari"><li>Core Web Vitals</li><li>SEO</li><li>Analytics</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects section-dark" id="projects">
+      <div class="container">
+        <div class="projects-heading reveal">
+          <div>
+            <div class="eyebrow eyebrow-dark"><span>02</span> Tanlangan ishlar</div>
+            <h2>G‘oya emas,<br><em>natija ko‘rsataman.</em></h2>
+          </div>
+          <p>Har bir loyiha — aniq muammo, puxta o‘ylangan yechim va o‘lchanadigan natija.</p>
+        </div>
+
+        <div class="project-list">
+          <article class="project-card reveal">
+            <div class="project-visual project-visual-eduspace">
+              <div class="mock-browser eduspace-browser" aria-hidden="true">
+                <div class="mock-top"><div class="mock-logo"><i></i> EDUSPACE</div><div class="mock-search">Find a course...</div><div class="mock-avatar"></div></div>
+                <div class="eduspace-body">
+                  <div class="mock-sidebar"><i></i><i></i><i></i><i></i><i></i></div>
+                  <div class="eduspace-main">
+                    <div class="mock-greeting">Welcome back, Alex <span>•••</span></div>
+                    <div class="balance-row"><div><small>Overall learning progress</small><strong>76<span>%</span></strong><em>↗ 12% this week</em></div><div class="balance-action">+ Explore courses</div></div>
+                    <div class="chart-card"><div class="chart-label">Learning activity <span>Weekly⌄</span></div><svg viewBox="0 0 600 130" preserveAspectRatio="none"><defs><linearGradient id="chart-fill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8fb7ff" stop-opacity=".32"/><stop offset="1" stop-color="#8fb7ff" stop-opacity="0"/></linearGradient></defs><path class="chart-area" d="M0 112 C40 108 48 88 92 92 S145 45 190 68 S252 96 292 58 S350 18 390 40 S455 70 490 35 S550 28 600 10 L600 130 L0 130Z"/><path class="chart-line" d="M0 112 C40 108 48 88 92 92 S145 45 190 68 S252 96 292 58 S350 18 390 40 S455 70 490 35 S550 28 600 10"/></svg></div>
+                  </div>
+                </div>
+              </div>
+              <span class="project-index">01 / 03</span>
+            </div>
+            <div class="project-info">
+              <div><div class="project-meta">EDUCATION · 2025</div><h3>EduSpace</h3><p>Talabalar va mentorlar uchun interaktiv kurslar, vazifalar va progress analitikasini birlashtiruvchi ta’lim platformasi.</p></div>
+              <div class="project-bottom"><ul class="tag-list"><li>React</li><li>TypeScript</li><li>GraphQL</li></ul><button class="project-link" type="button" data-project="eduspace" aria-label="EduSpace loyihasi haqida batafsil">Case study <span aria-hidden="true">↗</span></button></div>
+            </div>
+          </article>
+
+          <article class="project-card project-card-reverse reveal">
+            <div class="project-visual project-visual-atelier">
+              <div class="atelier-word" aria-hidden="true">ATELIER</div>
+              <div class="product-scene" aria-hidden="true">
+                <div class="product-shadow"></div>
+                <div class="chair"><div class="chair-back"></div><div class="chair-seat"></div><i></i><i></i><i></i><i></i></div>
+                <div class="product-tag"><small>NEW COLLECTION</small><strong>Forma Lounge Chair</strong><span>$890 — View product ↗</span></div>
+              </div>
+              <span class="project-index">02 / 03</span>
+            </div>
+            <div class="project-info">
+              <div><div class="project-meta">E-COMMERCE · 2025</div><h3>Atelier Store</h3><p>Minimalistik mebel brendi uchun premium va yuqori konversiyali onlayn do‘kon.</p></div>
+              <div class="project-bottom"><ul class="tag-list"><li>Next.js</li><li>Shopify</li><li>GSAP</li></ul><button class="project-link" type="button" data-project="atelier" aria-label="Atelier Store loyihasi haqida batafsil">Case study <span aria-hidden="true">↗</span></button></div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-visual project-visual-flow">
+              <div class="flow-window" aria-hidden="true">
+                <div class="flow-top"><div class="mock-logo"><i></i> flow</div><span>Workspace ⌄</span><div class="flow-faces"><i></i><i></i><i></i><b>+4</b></div></div>
+                <div class="flow-title"><small>PROJECT OVERVIEW</small><strong>Product launch <span>•••</span></strong><div><b>◷ 12 tasks</b><b>◉ 4 members</b><em>+ New task</em></div></div>
+                <div class="kanban"><div><small>TO DO <b>3</b></small><article><i class="purple"></i>Design system audit<span>◷ Today <b>JD</b></span></article><article><i class="orange"></i>User research<span>◷ 24 Oct <b>MK</b></span></article></div><div><small>IN PROGRESS <b>2</b></small><article><i class="green"></i>Homepage prototype<span>◷ Today <b>AL</b></span></article><article><i class="blue"></i>API integration<span>◷ 26 Oct <b>SK</b></span></article></div><div><small>COMPLETED <b>8</b></small><article><i class="gray"></i>Project setup<span>✓ Done <b>ER</b></span></article></div></div>
+              </div>
+              <span class="project-index">03 / 03</span>
+            </div>
+            <div class="project-info">
+              <div><div class="project-meta">SAAS · 2024</div><h3>Flow Workspace</h3><p>Jamoalar uchun vazifalar, jarayonlar va muloqotni bir joyga jamlaydigan workspace.</p></div>
+              <div class="project-bottom"><ul class="tag-list"><li>React</li><li>Node.js</li><li>WebSocket</li></ul><button class="project-link" type="button" data-project="flow" aria-label="Flow Workspace loyihasi haqida batafsil">Case study <span aria-hidden="true">↗</span></button></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="experience section-light" id="experience">
+      <div class="container experience-grid">
+        <div class="experience-sticky reveal">
+          <div class="eyebrow"><span>03</span> Tajriba</div>
+          <h2>Tajriba —<br><em>natijalar bilan.</em></h2>
+          <p>Mahsulot jamoalari va startaplar bilan birga ishlab, g‘oyalarni ishonchli raqamli mahsulotlarga aylantirdim.</p>
+          <a class="text-link text-link-dark" href="mailto:hello@islom.dev">CV so‘rash <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-date">2024 — HOZIR</div>
+            <div><h3>Senior Frontend Developer</h3><h4>Digital Product Studio</h4><p>Mahsulot arxitekturasi va frontend jamoasiga texnik yetakchilik. Dizayn tizimini joriy qilib, yangi funksiyalarni ishga tushirish vaqtini qisqartirdim.</p><ul class="tag-list"><li>Technical leadership</li><li>Architecture</li><li>Mentoring</li></ul></div>
+          </article>
+          <article class="timeline-item reveal">
+            <div class="timeline-date">2022 — 2024</div>
+            <div><h3>Frontend Developer</h3><h4>Fintech Company</h4><p>Murakkab moliyaviy jarayonlarni sodda va ishonchli interfeyslarga aylantirdim. Web vitals ko‘rsatkichlarini yaxshilab, mahsulot sifatini oshirdim.</p><ul class="tag-list"><li>React</li><li>Design systems</li><li>Performance</li></ul></div>
+          </article>
+          <article class="timeline-item reveal">
+            <div class="timeline-date">2021 — 2022</div>
+            <div><h3>UI Developer</h3><h4>Creative Agency</h4><p>Xalqaro brendlar uchun kampaniya saytlari va interaktiv tajribalar yaratdim. Dizaynerlar bilan yaqin hamkorlikda animatsion tizimlarni ishlab chiqdim.</p><ul class="tag-list"><li>JavaScript</li><li>Creative dev</li><li>Animation</li></ul></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="contact-orb" aria-hidden="true"></div>
+      <div class="container contact-inner">
+        <div class="availability availability-dark reveal"><span class="status-dot"></span> Yangi loyiha bormi?</div>
+        <h2 class="reveal reveal-delay-1">Keling, ajoyib narsa<br><em>birga yarataylik.</em></h2>
+        <p class="reveal reveal-delay-2">G‘oyangiz, savolingiz yoki shunchaki salom demoqchimisiz?<br>Pochtam doimo ochiq — odatda 24 soat ichida javob beraman.</p>
+        <div class="contact-actions reveal reveal-delay-3">
+          <a class="contact-email" href="mailto:hello@islom.dev">hello@islom.dev <span aria-hidden="true">↗</span></a>
+          <button class="copy-email" type="button" data-copy-email="hello@islom.dev" aria-label="Email manzilini nusxalash"><span aria-hidden="true">⧉</span></button>
+        </div>
+        <div class="contact-meta reveal"><span>Toshkent, O‘zbekiston</span><span data-local-time>GMT+5 · --:--</span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="logo" href="#home"><span class="logo-mark">i</span><span>islom<span class="accent">.</span>dev</span></a>
+      <p>© <span data-year></span> Islom. E’tibor bilan yaratilgan.</p>
+      <div class="social-links"><a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub profili">GitHub ↗</a><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profili">LinkedIn ↗</a><a href="https://t.me/" target="_blank" rel="noopener noreferrer" aria-label="Telegram profili">Telegram ↗</a></div>
+    </div>
+  </footer>
+
+  <dialog class="project-dialog" aria-labelledby="dialog-title">
+    <button class="dialog-close" type="button" aria-label="Oynani yopish">×</button>
+    <div class="dialog-content">
+      <div class="eyebrow eyebrow-dark"><span data-dialog-number>01</span> Case study</div>
+      <h2 id="dialog-title"></h2>
+      <p class="dialog-intro" data-dialog-intro></p>
+      <div class="dialog-stats" data-dialog-stats></div>
+      <div class="dialog-details"><div><h3>Muammo</h3><p data-dialog-challenge></p></div><div><h3>Yechim</h3><p data-dialog-solution></p></div></div>
+      <a class="button button-primary" href="#contact" data-dialog-contact>Shunga o‘xshash loyiha <span aria-hidden="true">↗</span></a>
+    </div>
+  </dialog>
+  <div class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+</body>
+</html>

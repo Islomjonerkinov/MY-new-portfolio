@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 700" role="img" aria-labelledby="title desc">
+  <title id="title">Islom portreti</title>
+  <desc id="desc">Yashil fonda stilizatsiya qilingan yosh dasturchi portreti</desc>
+  <defs>
+    <linearGradient id="skin" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#d9a174"/><stop offset="1" stop-color="#b87750"/></linearGradient>
+    <linearGradient id="shirt" x1="0" y1="0" x2=".8" y2="1"><stop stop-color="#30332d"/><stop offset="1" stop-color="#121411"/></linearGradient>
+    <filter id="grain"><feTurbulence baseFrequency=".8" numOctaves="3" stitchTiles="stitch" type="fractalNoise"/><feColorMatrix values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 .07 0"/></filter>
+  </defs>
+  <ellipse cx="322" cy="667" rx="270" ry="34" fill="#8ca744" opacity=".32"/>
+  <path d="M85 700c10-137 42-204 148-231l64-15 74 8c104 15 156 89 170 238H85Z" fill="url(#shirt)"/>
+  <path d="m252 405-7 81c17 34 101 37 127-6l-21-101-99 26Z" fill="url(#skin)"/>
+  <path d="M249 436c27 22 72 21 111-8l-8-27-99 26-4 9Z" fill="#8e583e" opacity=".36"/>
+  <path d="M185 216c5-105 68-151 148-140 84 11 119 78 103 175l-21 119c-15 69-80 101-136 73-48-24-75-80-81-133l-13-94Z" fill="url(#skin)"/>
+  <path d="M197 268c-34-22-52 7-39 48 8 28 27 41 48 31l-9-79Zm224-11c29-28 50-1 39 39-8 28-24 42-44 34l5-73Z" fill="#bc8058"/>
+  <path d="M179 262c-19-72 10-172 81-202 67-29 151 6 177 66 18 42 11 100-6 133l-18-65c-46 10-104-7-140-40-16 34-51 64-94 72v36Z" fill="#20221e"/>
+  <path d="M187 205c-9-72 29-137 89-151 73-17 142 34 152 89-28-44-67-58-111-49-50 10-80 51-130 111Z" fill="#36382f"/>
+  <path d="M228 248c22-16 46-16 69-4m43 1c22-13 44-10 61 4" fill="none" stroke="#563b2d" stroke-width="8" stroke-linecap="round"/>
+  <path d="M245 275c13 9 26 9 39 0m74 1c12 8 24 8 35-1" fill="none" stroke="#20221e" stroke-width="7" stroke-linecap="round"/>
+  <path d="m320 269-10 59 24 5" fill="none" stroke="#935c41" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M263 365c29 25 72 26 105-2-33 12-69 13-105 2Z" fill="#693c32"/>
+  <path d="M276 366c24 10 50 10 75-1" fill="none" stroke="#e5b49a" stroke-width="5" stroke-linecap="round"/>
+  <path d="M210 221c-4 48-1 96 12 142-30-45-39-102-32-154l20 12Zm205 1 4 130c25-38 35-92 27-143l-31 13Z" fill="#292b25" opacity=".16"/>
+  <path d="m239 466 56 45-37 62-54-99 35-8Zm125-1-69 46 44 61 54-98-29-9Z" fill="#e9e9df"/>
+  <path d="m295 511-37 62 21 127h75l-15-128 25-61-69 0Z" fill="#242721"/>
+  <path d="M111 700c14-92 33-143 81-177m330 177c-10-85-37-151-91-181" fill="none" stroke="#41463b" stroke-width="4" opacity=".6"/>
+  <rect width="620" height="700" filter="url(#grain)" opacity=".55"/>
+</svg>
