@@ -1,17 +1,18 @@
 document.documentElement.classList.add('js');
 
 const projects = {
-  eduspace: {
+  nova: {
     number: '01',
-    title: 'EduSpace',
-    intro: 'Talabalar va mentorlarni birlashtiruvchi, o‘qish jarayonini qiziqarli va o‘lchanadigan qiladigan zamonaviy onlayn ta’lim platformasi.',
+    title: 'NOVA — Apple Store',
+    intro: 'Apple mahsulotlarini kashf etish, tanlash va xarid qilishni oddiy va yoqimli tajribaga aylantiruvchi zamonaviy onlayn do‘kon.',
+    url: 'https://apple-ad2.vercel.app/',
     stats: [
-      { value: '42%', label: 'Yuqori faollik' },
-      { value: '18k+', label: 'Faol talaba' },
-      { value: '4.9/5', label: 'Kurslar bahosi' }
+      { value: '24/7', label: 'Onlayn yordam' },
+      { value: '12 oy', label: 'Kafolat' },
+      { value: '30 kun', label: 'Qaytarish imkoniyati' }
     ],
-    challenge: 'Talabalar darslar, topshiriqlar va o‘z rivojlanishini turli vositalarda kuzatishga majbur bo‘lishardi. Mentorlar esa har bir talabaning jarayonini tez va aniq baholay olmasdi.',
-    solution: 'Shaxsiylashtirilgan o‘quv paneli, interaktiv kurslar va progress analitikasini yaratdim. Video, topshiriqlar va mentor feedback tizimini yagona, barcha qurilmalarda qulay ishlaydigan interfeysga birlashtirdim.'
+    challenge: 'Apple mahsulotlarining katta tanlovini foydalanuvchiga charchatmaydigan qilib taqdim etish, texnik xususiyatlarni tushunarli ko‘rsatish va xarid qaroriga yordam berish kerak edi.',
+    solution: 'Kuchli mahsulot vizuallari, aniq tipografiya va soddalashtirilgan navigatsiya asosida premium interfeys yaratdim. Yetkazib berish, kafolat va qaytarish shartlarini ko‘rinadigan qilib, ishonchni oshirdim.'
   },
   atelier: {
     number: '02',
@@ -36,6 +37,32 @@ const projects = {
     ],
     challenge: 'Jamoalar vazifalar, fayllar va muhokama uchun alohida vositalardan foydalanar, jarayonning umumiy holatini ko‘rish qiyin edi. Real vaqt yangilanishlari ko‘p ma’lumotda sekinlashardi.',
     solution: 'Modulli arxitektura, optimistic UI va WebSocket asosida tezkor hamkorlik tizimini qurdim. Klaviatura boshqaruvi va accessibility talablarini qo‘shib, drag-and-drop jarayonini barcha qurilmalarga mosladim.'
+  },
+  aetheria: {
+    number: '04',
+    title: 'Aetheria',
+    intro: 'Kristallar, gullagan daraxt va cheksiz osmonga oqadigan sharsharalardan iborat interaktiv 3D uchuvchi orol tajribasi.',
+    url: 'https://5ictj43h2yqcc.kimi.page/',
+    stats: [
+      { value: '360°', label: 'Interaktiv ko‘rinish' },
+      { value: '3D', label: 'Real-time olam' },
+      { value: '3 ta', label: 'Vizual rejim' }
+    ],
+    challenge: 'Foydalanuvchiga oddiy sahifa emas, balki jonli va kashf etishni xohlaydigan raqamli olam taqdim etish kerak edi. 3D sahnaning turli qurilmalarda silliq ishlashi ham muhim edi.',
+    solution: 'Interaktiv kamera, yumshoq animatsiyalar va uchta vizual rejim orqali orolni kashf etish tajribasini yaratdim. Sahnani real vaqtda boshqarish va yaqinlashtirish imkoniyatlarini qo‘shdim.'
+  },
+  zira: {
+    number: '05',
+    title: 'Zira — Premium Restoran',
+    intro: 'Milliy taomlar va zamonaviy restoran madaniyatini premium raqamli tajriba bilan birlashtiruvchi restoran sayti.',
+    url: 'https://lnqniuqin6elc.kimi.page/',
+    stats: [
+      { value: '15 yil', label: 'Restoran tajribasi' },
+      { value: '50+', label: 'Milliy taomlar' },
+      { value: '4.9★', label: 'Mehmonlar bahosi' }
+    ],
+    challenge: 'Restoranning uzoq yillik tarixini va milliy taomlar ruhini saytda his qildirish, shu bilan birga menyu va stol bron qilish jarayonini sodda saqlash zarur edi.',
+    solution: 'Issiq fotosuratlar, kuchli tipografiya va restoran hikoyasiga asoslangan kontent tuzilmasini yaratdim. Menyu, galereya va bron qilish funksiyalarini yagona premium tajribaga birlashtirdim.'
   }
 };
 
@@ -129,6 +156,8 @@ const dialogIntro = dialog.querySelector('[data-dialog-intro]');
 const dialogStats = dialog.querySelector('[data-dialog-stats]');
 const dialogChallenge = dialog.querySelector('[data-dialog-challenge]');
 const dialogSolution = dialog.querySelector('[data-dialog-solution]');
+const dialogAction = dialog.querySelector('[data-dialog-action]');
+const dialogActionLabel = dialog.querySelector('[data-dialog-action-label]');
 
 function openProject(projectId) {
   const project = projects[projectId];
@@ -148,6 +177,15 @@ function openProject(projectId) {
     item.append(value, label);
     return item;
   }));
+  dialogAction.href = project.url || '#contact';
+  dialogActionLabel.textContent = project.url ? 'Saytni ochish' : 'Shunga o‘xshash loyiha';
+  if (project.url) {
+    dialogAction.target = '_blank';
+    dialogAction.rel = 'noopener noreferrer';
+  } else {
+    dialogAction.removeAttribute('target');
+    dialogAction.removeAttribute('rel');
+  }
   dialog.showModal();
 }
 
@@ -156,7 +194,7 @@ document.querySelectorAll('[data-project]').forEach(button => {
 });
 
 dialog.querySelector('.dialog-close').addEventListener('click', () => dialog.close());
-dialog.querySelector('[data-dialog-contact]').addEventListener('click', () => dialog.close());
+dialogAction.addEventListener('click', () => dialog.close());
 dialog.addEventListener('click', event => {
   if (event.target !== dialog) return;
   const bounds = dialog.getBoundingClientRect();
