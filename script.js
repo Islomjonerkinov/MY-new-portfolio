@@ -14,32 +14,8 @@ const projects = {
     challenge: 'Apple mahsulotlarining katta tanlovini foydalanuvchiga charchatmaydigan qilib taqdim etish, texnik xususiyatlarni tushunarli ko‘rsatish va xarid qaroriga yordam berish kerak edi.',
     solution: 'Kuchli mahsulot vizuallari, aniq tipografiya va soddalashtirilgan navigatsiya asosida premium interfeys yaratdim. Yetkazib berish, kafolat va qaytarish shartlarini ko‘rinadigan qilib, ishonchni oshirdim.'
   },
-  atelier: {
-    number: '02',
-    title: 'Atelier Store',
-    intro: 'Mahsulot go‘zalligini oldinga chiqaradigan, xarid jarayonini esa imkon qadar oddiy qiladigan premium mebel e-commerce tajribasi.',
-    stats: [
-      { value: '28%', label: 'Konversiya o‘sishi' },
-      { value: '1.2s', label: 'Yuklanish vaqti' },
-      { value: '+41%', label: 'Mobil savdo' }
-    ],
-    challenge: 'Brendning premium qiyofasi eski saytda namoyon bo‘lmas, xaridorlar mahsulot detallarini ko‘rish va xaridni yakunlash jarayonida qiynalar edi. Mobil traﬁk yuqori, konversiya esa past bo‘lgan.',
-    solution: 'Katta tipografiya, tabiiy ranglar va silliq animatsiyalar asosida yangi vizual til yaratdim. Mahsulot sahifasi va checkout oqimini soddalashtirdim, responsive rasmlar va optimizatsiya bilan tezlikni oshirdim.'
-  },
-  flow: {
-    number: '03',
-    title: 'Flow Workspace',
-    intro: 'Kichik va o‘sayotgan jamoalar uchun vazifalarni rejalash, ijroni kuzatish va real vaqtda hamkorlik qilishni soddalashtiruvchi workspace.',
-    stats: [
-      { value: '42%', label: 'Kamroq qo‘lda ish' },
-      { value: '12k+', label: 'Faol foydalanuvchi' },
-      { value: '99.9%', label: 'Barqarorlik' }
-    ],
-    challenge: 'Jamoalar vazifalar, fayllar va muhokama uchun alohida vositalardan foydalanar, jarayonning umumiy holatini ko‘rish qiyin edi. Real vaqt yangilanishlari ko‘p ma’lumotda sekinlashardi.',
-    solution: 'Modulli arxitektura, optimistic UI va WebSocket asosida tezkor hamkorlik tizimini qurdim. Klaviatura boshqaruvi va accessibility talablarini qo‘shib, drag-and-drop jarayonini barcha qurilmalarga mosladim.'
-  },
   aetheria: {
-    number: '04',
+    number: '02',
     title: 'Aetheria',
     intro: 'Kristallar, gullagan daraxt va cheksiz osmonga oqadigan sharsharalardan iborat interaktiv 3D uchuvchi orol tajribasi.',
     url: 'https://5ictj43h2yqcc.kimi.page/',
@@ -52,7 +28,7 @@ const projects = {
     solution: 'Interaktiv kamera, yumshoq animatsiyalar va uchta vizual rejim orqali orolni kashf etish tajribasini yaratdim. Sahnani real vaqtda boshqarish va yaqinlashtirish imkoniyatlarini qo‘shdim.'
   },
   zira: {
-    number: '05',
+    number: '03',
     title: 'Zira — Premium Restoran',
     intro: 'Milliy taomlar va zamonaviy restoran madaniyatini premium raqamli tajriba bilan birlashtiruvchi restoran sayti.',
     url: 'https://lnqniuqin6elc.kimi.page/',

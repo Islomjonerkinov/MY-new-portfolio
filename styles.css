@@ -1097,24 +1097,6 @@ ul {
   backdrop-filter: blur(8px);
 }
 
-.mock-logo {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 8px;
-  font-weight: 700;
-  letter-spacing: 1.2px;
-  white-space: nowrap;
-}
-
-.mock-logo i {
-  width: 10px;
-  height: 10px;
-  background: var(--accent);
-  border-radius: 3px;
-  transform: rotate(45deg);
-}
-
 .project-links {
   display: grid;
   grid-template-columns: 1fr auto;
@@ -1217,330 +1199,6 @@ ul {
 .project-link:hover span {
   background: var(--white);
   transform: rotate(45deg);
-}
-
-.project-visual-atelier {
-  color: #292821;
-  background: #d9d0be;
-}
-
-.project-visual-atelier .project-index {
-  color: rgba(41, 40, 33, 0.55);
-}
-
-.atelier-word {
-  position: absolute;
-  top: 3%;
-  left: 50%;
-  font-family: var(--font-serif);
-  font-size: clamp(55px, 8.2vw, 113px);
-  letter-spacing: 8px;
-  line-height: 1;
-  transform: translateX(-50%);
-}
-
-.product-scene {
-  position: absolute;
-  inset: 22% 0 0;
-  background: radial-gradient(ellipse at 50% 95%, #b4a88e 0, transparent 60%);
-}
-
-.product-shadow {
-  position: absolute;
-  bottom: 8%;
-  left: 50%;
-  width: 48%;
-  height: 12%;
-  background: rgba(48, 42, 31, 0.25);
-  border-radius: 50%;
-  filter: blur(15px);
-  transform: translateX(-50%);
-}
-
-.chair {
-  position: absolute;
-  bottom: 13%;
-  left: 50%;
-  width: 190px;
-  height: 260px;
-  transform: translateX(-50%) rotate(-4deg);
-  transition: transform 0.8s var(--ease);
-}
-
-.project-card:hover .chair {
-  transform: translateX(-50%) rotate(1deg) translateY(-5px);
-}
-
-.chair-back {
-  position: absolute;
-  top: 0;
-  left: 20px;
-  width: 155px;
-  height: 142px;
-  background: linear-gradient(125deg, #9c744b, #6c492f);
-  border-radius: 48% 45% 25% 25%;
-  box-shadow: inset 8px 7px 16px rgba(255, 255, 255, 0.12), inset -12px -8px 20px rgba(32, 22, 14, 0.18);
-  transform: skewY(-5deg);
-}
-
-.chair-seat {
-  position: absolute;
-  z-index: 2;
-  top: 122px;
-  left: 4px;
-  width: 179px;
-  height: 66px;
-  background: linear-gradient(150deg, #a57c52, #765033);
-  border-radius: 35% 28% 40% 35%;
-  box-shadow: inset 5px 5px 10px rgba(255, 255, 255, 0.12), 0 10px 10px rgba(54, 37, 24, 0.22);
-}
-
-.chair > i {
-  position: absolute;
-  z-index: 1;
-  top: 168px;
-  left: 30px;
-  width: 8px;
-  height: 90px;
-  background: #493a2d;
-  border-radius: 5px;
-  transform: rotate(7deg);
-  transform-origin: top;
-}
-
-.chair > i:nth-of-type(2) {
-  left: 150px;
-  transform: rotate(-8deg);
-}
-
-.chair > i:nth-of-type(3) {
-  top: 156px;
-  left: 50px;
-  height: 65px;
-  opacity: 0.65;
-  transform: rotate(-4deg);
-}
-
-.chair > i:nth-of-type(4) {
-  top: 156px;
-  left: 135px;
-  height: 66px;
-  opacity: 0.65;
-  transform: rotate(5deg);
-}
-
-.product-tag {
-  position: absolute;
-  right: 5%;
-  bottom: 6%;
-  display: flex;
-  flex-direction: column;
-  text-align: right;
-}
-
-.product-tag small {
-  font-size: 6px;
-  letter-spacing: 1.5px;
-}
-
-.product-tag strong {
-  margin: 4px 0;
-  font-family: var(--font-serif);
-  font-size: 18px;
-  font-weight: 400;
-}
-
-.product-tag span {
-  font-size: 7px;
-}
-
-.project-visual-flow {
-  display: grid;
-  place-items: center;
-  background: #b8b6ed;
-  background-image: radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.25), transparent 45%);
-}
-
-.flow-window {
-  width: 88%;
-  margin-top: 6%;
-  overflow: hidden;
-  color: #27252f;
-  background: #f8f7fb;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 9px 9px 0 0;
-  box-shadow: 0 35px 60px rgba(57, 51, 103, 0.25);
-  transition: transform 0.8s var(--ease);
-}
-
-.project-card:hover .flow-window {
-  transform: translateY(-7px) scale(1.015);
-}
-
-.flow-top {
-  display: flex;
-  height: 40px;
-  align-items: center;
-  gap: 20px;
-  padding: 0 16px;
-  border-bottom: 1px solid #e8e5ed;
-}
-
-.flow-top .mock-logo {
-  font-size: 12px;
-  letter-spacing: -0.5px;
-}
-
-.flow-top .mock-logo i {
-  background: #8d7ce2;
-}
-
-.flow-top > span {
-  color: #8c8797;
-  font-size: 6px;
-}
-
-.flow-faces {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-}
-
-.flow-faces i,
-.flow-faces b {
-  display: grid;
-  width: 17px;
-  height: 17px;
-  place-items: center;
-  margin-left: -4px;
-  background: #d3a787;
-  border: 2px solid #f8f7fb;
-  border-radius: 50%;
-}
-
-.flow-faces i:nth-child(2) { background: #8daaa4; }
-.flow-faces i:nth-child(3) { background: #a89dc8; }
-.flow-faces b { color: #756e81; background: #eae7f0; font-size: 5px; }
-
-.flow-title {
-  padding: 19px 20px 15px;
-}
-
-.flow-title > small {
-  color: #95909e;
-  font-size: 5px;
-  letter-spacing: 1px;
-}
-
-.flow-title > strong {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 2px;
-  font-size: 18px;
-  letter-spacing: -0.7px;
-}
-
-.flow-title > strong span {
-  color: #8c8797;
-  letter-spacing: 2px;
-}
-
-.flow-title > div {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-top: 10px;
-}
-
-.flow-title b {
-  color: #8a8593;
-  font-size: 6px;
-  font-weight: 400;
-}
-
-.flow-title em {
-  margin-left: auto;
-  padding: 5px 9px;
-  color: white;
-  background: #8170d4;
-  border-radius: 3px;
-  font-size: 6px;
-  font-style: normal;
-}
-
-.kanban {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 9px;
-  height: 210px;
-  padding: 14px 17px;
-  background: #f0eef5;
-}
-
-.kanban > div > small {
-  display: flex;
-  gap: 5px;
-  margin-bottom: 8px;
-  color: #817b8d;
-  font-size: 5px;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-}
-
-.kanban > div > small b {
-  display: grid;
-  width: 10px;
-  height: 10px;
-  place-items: center;
-  background: #dfdce6;
-  border-radius: 2px;
-  font-size: 5px;
-}
-
-.kanban article {
-  margin-bottom: 7px;
-  padding: 9px;
-  background: white;
-  border: 1px solid #e5e1eb;
-  border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(37, 30, 54, 0.03);
-  font-size: 7px;
-  font-weight: 500;
-}
-
-.kanban article > i {
-  display: inline-block;
-  width: 4px;
-  height: 4px;
-  margin-right: 4px;
-  background: #aaa;
-  border-radius: 50%;
-  vertical-align: middle;
-}
-
-.kanban article > i.purple { background: #9b7bdd; }
-.kanban article > i.orange { background: #dc9b64; }
-.kanban article > i.green { background: #72b59b; }
-.kanban article > i.blue { background: #6f9ccd; }
-
-.kanban article > span {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 9px;
-  color: #9993a2;
-  font-size: 5px;
-  font-weight: 400;
-}
-
-.kanban article > span b {
-  display: grid;
-  width: 12px;
-  height: 12px;
-  place-items: center;
-  color: #77707e;
-  background: #e8e4eb;
-  border-radius: 50%;
-  font-size: 4px;
 }
 
 .experience {
@@ -1956,8 +1614,6 @@ ul {
   .code-card { right: -15px; }
   .quality-card { left: -25px; }
   .project-card { gap: 35px; }
-  .chair { transform: translateX(-50%) rotate(-4deg) scale(0.85); }
-  .project-card:hover .chair { transform: translateX(-50%) rotate(1deg) translateY(-5px) scale(0.85); }
   .experience-grid { gap: 60px; }
 }
 
@@ -1991,12 +1647,6 @@ ul {
   .project-info p { font-size: 12px; }
   .nova-pro-copy strong { font-size: 22px; }
   .nova-brand span { display: none; }
-  .product-tag { display: none; }
-  .atelier-word { font-size: 70px; }
-  .chair { bottom: 4%; }
-  .flow-title { padding: 13px; }
-  .kanban { height: 180px; padding: 10px; gap: 5px; }
-  .kanban article { padding: 6px; }
   .experience-grid { grid-template-columns: 0.8fr 1.2fr; gap: 40px; }
   .timeline-item { grid-template-columns: 1fr; gap: 12px; }
   .timeline-item h3 { font-size: 21px; }
@@ -2064,10 +1714,6 @@ ul {
   .project-info p { max-width: 500px; font-size: 13px; }
   .project-bottom { margin-top: 25px; }
   .nova-pro-copy strong { font-size: clamp(22px, 5vw, 30px); }
-  .product-tag { display: flex; }
-  .atelier-word { font-size: 15vw; }
-  .chair { bottom: 6%; }
-  .kanban { height: 200px; }
   .experience-grid { grid-template-columns: 1fr; gap: 65px; }
   .experience-sticky { position: static; }
   .experience-sticky > p { max-width: 500px; }
@@ -2108,15 +1754,6 @@ ul {
   .nova-standard figcaption { padding-left: 0; }
   .nova-standard figcaption > span { display: none; }
   .project-info h3 { font-size: 32px; }
-  .chair { bottom: -2%; transform: translateX(-50%) rotate(-4deg) scale(0.78); }
-  .project-card:hover .chair { transform: translateX(-50%) rotate(1deg) translateY(-5px) scale(0.78); }
-  .product-tag { right: 4%; bottom: 3%; }
-  .product-tag strong { font-size: 14px; }
-  .flow-window { width: 94%; }
-  .flow-title > strong { font-size: 15px; }
-  .flow-title > div { gap: 6px; }
-  .kanban { height: 170px; padding: 8px; }
-  .kanban article { font-size: 6px; }
   .timeline-item { grid-template-columns: 1fr; gap: 10px; padding-bottom: 35px; }
   .timeline-item + .timeline-item { padding-top: 35px; }
   .contact h2 { font-size: 49px; letter-spacing: -3px; }
